@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia dos Namorados</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script>// Definição das perguntas e respostas secretas
+        const perguntasSecretas = [
+            {
+                pergunta: "quando foi nosso primeiro beijo ",
+                resposta: "dia 24"
+            },
+            {
+                pergunta: "quando vc se declarou pela primeira vez por mim?",
+                resposta: "18 julho"
+            },
+            {
+                pergunta: "qual foi a primeira coisa que eu te dei, como demonstraçao de amor, dica nao foi aliança?",
+                resposta: "flores"
+            },
+             
+            {
+                pergunta: "primeira vez que eu disse que te amava ?",
+                resposta: "9 de julho"
+            }
+        ];
+        
+        // Contadores de tentativas e erros
+        let tentativasRestantes = 3;
+        let erros = 0;
+        
+        // Função para verificar as respostas
+        function verificarRespostas() {
+            for (let i = 0; i < perguntasSecretas.length; i++) {
+                const pergunta = perguntasSecretas[i].pergunta;
+                const respostaCorreta = perguntasSecretas[i].resposta.toLowerCase(); // Convertendo a resposta para minúsculas para evitar problemas com maiúsculas/minúsculas
+        
+                let respostaUsuario;
+                let acertou = false;
+        
+                while (tentativasRestantes > 0 && !acertou) {
+                    respostaUsuario = prompt(pergunta + `\nTentativas restantes: ${tentativasRestantes}\nErros acumulados: ${erros}`);
+        
+                    if (respostaUsuario && respostaUsuario.toLowerCase() === respostaCorreta) {
+                        acertou = true;
+                    } else {
+                        tentativasRestantes--;
+                        erros++;
+                        alert("Resposta incorreta! Tente novamente.");
+                    }
+                }
+        
+                if (!acertou) {
+                    alert(`Suas tentativas acabaram para a pergunta: "${pergunta}"`);
+                    break; // Encerra o questionário se as tentativas acabarem
+                }
+            }
+        
+            if (tentativasRestantes === 0) {
+                alert("Você usou todas as tentativas. Acesso negado!");
+            } else {
+                alert("Parabéns! Você acertou todas as perguntas e ganhou o prêmio!");
+            }
+        }
+        
+        // Chamando a função para iniciar o questionário
+        verificarRespostas();
+        </script>
+</head>
+<body class="container">
+    <header class="cabecalho">
+    <nav>
+        <a class="cabecalho__links" href="#home">Home</a>
+        <a class="cabecalho__links" href="#cartinha">Cartinha</a>
+        <a class="cabecalho__links" href="#fotos">Nossas Fotos</a>
+    </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section id="home" class="apresentacao__inicio">
+            <div class="apresentacao_texto">
+                <h1 class="apresentacao__inicio__titulo">FELIZ MES VERSARIOOO <strong>lindinha!</strong></h1>
+                <h2 class="apresentacao__inicio__subtitulo"> foi amor à primeira vista. Demorou <strong>voce pedir meu insta e eu comentar no stories do  carrossel</h2>
+            </div>
+            <img class="apresentacao__inicio__imagem" src="img/fotos/foto.png.9.jpg" alt="foto">
+        </section>
+
+        <section id="cartinha" class="apresentacao__meio">
+            
+            <div class="apresentacao__meio__conteudo">
+                <h1 class="apresentacao__meio__titulo">Cartinha</strong></h1>
+                <p class="apresentacao__meio__texto">oii meu pao de love,<br><br>
+
+                    <br>Hoje vamos ver divertidamente no caso se esse site sair porque demorou muito, bom primeiro que te agradecer como sempre por tudo que vc faz e fez por nos, ultimamente vc vem melhorando muito nosso relacionamento isso fez eu amar vc cada vez mais, TOMARA QUE ESSE SITE SAIA QUANDO A GENTE FOR VER DIVERTIDAMENTE, voltando não sei se fomos pra praia bem provável que não mais se não tiver ido fomos na radiatual com toda certeza, gica basicamente è isso eu te amo muito mulher você não tem ideia alguma de como você me faz tão feliz, graças a você hoje tenho foco vontade sabe de lutar não só por mim, mais por você por nós eu tenho muito a te agradecer como você me faz feliz, chega a ser besta mais toda vez que eu te vejo sinto paz e felicidade aquela vontade incrível de viver, você me inspira, me motiva, me abraça, me beija, e tão ficar no seu braço sabendo que você me ama, e me desculpa por tudo tudo mesmo, muitas vezes não mereço você, mais nosso relacionamento tá em uma fase linda que nos finalmente nos conhecemos, em todos sentidos sabe, eu lembro que teve uma fase que só tinha briga, mais caí entre nós  a gente nem transava kkkkkkk brincadeira a parte, obrigado por tudo por pedir meu insta, por postar carrossel, e por jogar indiretas pra mim, poxa fico tão feliz meu filho ou filha terá você como mãe a pessoa que eu sempre sonhei agora fique com tudo que eu amo em você a baixo.
+
+
+
+                    <br><br> <li>coisas que amo em vc 💜</li>
+                
+                    <br><li>• eu amo seu cabelo ele è muito lindo vei e cheiroso, até de defumação kkkkkkkk</li><br> 
+                    <li>• amo suas unhas as cores que você pinta e suas unhas em si são lindas 
+                    </li>
+
+                    <li>• amo seu olhar, seus olhos me encantam tanto, me deixa todo apaixonado </li>
+                    <li>• amo sua boca seus lábios bem hidratados demais até os mínimos detalhes eu vejo em você!</li>
+                    <li>• seu cheiro, você sempre bem cheirosa seja perfume ou creme ou até mesmo body splash sla como escreve isso </li>
+                    <li>• amo seu sorriso, queria foto sua cmg sorrindo </li>
+                    <li>• amo seu peito gostoso lindo quero tete mamãe 
+                    </li>
+                    <li>• vamos falar sobre essa bunda gostosa que agora só anda depilada mais rapaz que bunda boa Giovanna 
+                    </li>
+                    <li>• amo suas coxas caralho eu sou apaixonado nas suas coxas affs 
+                    </li>
+                    <li>• eu amo a pitinha preta que tem na sua boca quando você  me beija pqp to com tesao fazendo site 
+                    </li>
+                    <li>• eu amo sua risada meu Deus voce tem uma risada gostosa demais </li>
+                    <li>• eu amo seu jeito carinhoso comigo </li>
+                    <li>• amo como me apoia mas também fala a verdade quando algo não vale a pena </li>
+                    <li>• amo sua mão acho muito bonita muito mesmo </li>
+                    <li>• amo sua cintura meter pegando na cintura virou meu alvo </li>
+                    <li>• amo seus pés até fazer massagem eu amo</li>
+                    <li>• eu te amo por completo desde que você apareceu na minha vida só tenho olhos pra você só você me tem, só você me deixa maluco</li>
+                    <li>• agora um trocadilho bom, amar é igual imposto de renda, tem que declarar 🥰</li>
+                    <li>amo as fio dental totoso demais </li>
+                    <li>amo sexo anal voce me deixa louco  </li>
+
+                        
+                  
+            </div>
+
+            <div >
+                <p class="apresentacao__meio__texto__imagem">gata gata gata gata </p>
+                <img class="apresentacao__meio__imagem" src="img/fotos/foto.png7.jpg" alt="cabeca_fritando">
+                <p class="apresentacao__meio__texto__imagem">linda, como sempre</p>
+                <img class="apresentacao__meio__imagem2" src="img/fotos/foto.png6.jpg" alt="socao">
+            </div>
+
+        </section>
+
+        <section id="fotos" class="fotos">
+            <h1 class="fotos__titulo">vc mt gata como sempre</h1>
+            <div class="container__fotos">
+                <img class="foto" src="img/fotos/foto.png5.jpg" alt="">
+                <img class="foto" src="img/fotos/foto.png4.jpg" alt="">
+                <img class="foto" src="img/fotos/foto.png3.jpg" alt="">
+                <img class="foto" src="img/fotos/foto.png.13.jpg" alt="">
+                <img class="foto" src="img/fotos/foto.png2.jpg" alt="">
+                <img class="foto" src="img/fotos/foto.png1.jpg" alt="">
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p> te amo gica pra sempre</p>
+    </footer>
+
+</body>
+</html>
